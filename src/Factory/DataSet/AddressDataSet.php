@@ -10,7 +10,7 @@ final class AddressDataSet implements DataSetInterface
 {
     public static function minimum(): array
     {
-
+                  return [ 'name' => self::faker()->name];
     }
 
     public static function all(): array
