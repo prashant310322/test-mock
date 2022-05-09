@@ -14,6 +14,8 @@ class UserInputDto
     public ?string $email = null;
     public ?string $password = null;
 
+    public array $addresses;
+
 
     public static function fromEntity(?User $user): self
     {

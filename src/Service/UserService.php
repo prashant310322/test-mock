@@ -14,6 +14,11 @@ class UserService
     {
     }
 
+    public  function  findUserById($userId){
+
+        return $this->userRepository->find($userId);
+    }
+
     public function deleteUserByUserId($userId){
         $deleteAddressStatus = $this->deleteAllAddressesByUserId($userId);
         if($deleteAddressStatus){

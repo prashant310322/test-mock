@@ -9,7 +9,9 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: AddressRepository::class)]
-#[ApiResource(input: AddressInputDto::class)]
+#[ApiResource(
+    //input: AddressInputDto::class
+    )]
 class Address
 {
     #[ORM\Id]

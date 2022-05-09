@@ -25,7 +25,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 //            'controller'=>UserDeleteController::class
 //        ]
     ],
-           input: UserInputDto::class,
+         //  input: UserInputDto::class,
    //denormalizationContext: ['groups' => ['user.write' ]],
 )]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
