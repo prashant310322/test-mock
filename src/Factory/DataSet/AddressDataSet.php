@@ -15,7 +15,9 @@ final class AddressDataSet implements DataSetInterface
 
     public static function all(): array
     {
-        // TODO: Implement all() method.
+        return array_merge(
+            self::minimum(),
+            [ 'useAddress' => self::faker()->useAddress]);
     }
 
 }
